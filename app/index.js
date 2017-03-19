@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
   StyleSheet,
   Text,
   View,
   Button,
-} from 'react-native';
+} from 'react-native'
 
 export default class HCIApp extends Component {
   constructor(props) {
-    super(props);
-    this.state = {hciText: 'Hello 21w.789x'};
+    super(props)
+    this.state = {hciText: 'Hello 21w.789x'}
   }
 
   render() {
@@ -22,7 +22,7 @@ export default class HCIApp extends Component {
           onPress={() => {
             this.setState({
               hciText: 'Goodbye 21w.789x'
-            });
+            })
           }}
           title="Change text"
           color="#841584"
@@ -30,7 +30,7 @@ export default class HCIApp extends Component {
         />
 
       </View>
-    );
+    )
   }
 }
 
@@ -41,4 +41,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-});
+})
